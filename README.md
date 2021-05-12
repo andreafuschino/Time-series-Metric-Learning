@@ -12,10 +12,24 @@ In this repository there are 5 colab notebooks:
 
 
 ## Baseline
-![alt text](https://github.com/andreafuschino/Generalized-Hough-Transform/blob/main/output.png)
+![alt text](https://github.com/andreafuschino/Time-series-Metric-Learning/blob/main/embeddings%20space%20plotting/baseline.png)
 ## Triplet Loss all-triplet
-![alt text](https://github.com/andreafuschino/Generalized-Hough-Transform/blob/main/output.png)
+![alt text](https://github.com/andreafuschino/Time-series-Metric-Learning/blob/main/embeddings%20space%20plotting/all-triplet.png)
 ## Triplet Loss semi-hard
-![alt text](https://github.com/andreafuschino/Generalized-Hough-Transform/blob/main/output.png)
+![alt text](https://github.com/andreafuschino/Time-series-Metric-Learning/blob/main/embeddings%20space%20plotting/semi-hard.png)
 ## Triplet Loss all-triplet + data augmentation
-![alt text](https://github.com/andreafuschino/Generalized-Hough-Transform/blob/main/output.png)
+![alt text](https://github.com/andreafuschino/Time-series-Metric-Learning/blob/main/embeddings%20space%20plotting/augment_train.png)
+![alt text](https://github.com/andreafuschino/Time-series-Metric-Learning/blob/main/embeddings%20space%20plotting/augment_test.png)
+## Results
+
+| Method           | Percision@1 | MaP | NMI |
+| ------------- | ------------- |------------- |------------- |
+| Baseline CrossEntropy  | 0.710  | 0.715 | 0.391  |
+| Triplet Loss all-triplet | 0.750  | 0.787  | 0.437  |
+| Triplet Loss semi-hard   | 0.781  | 0.797  | 0.450  |
+|  Triplet Loss all-triplet + augmentation  | 0.856  | 0.867 | 0.636 |
+
+#### Resources
+https://github.com/adambielski/siamese-triplet
+
+https://github.com/KevinMusgrave/pytorch-metric-learning
